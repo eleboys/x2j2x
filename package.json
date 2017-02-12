@@ -1,0 +1,14 @@
+{
+  "name": "e2j2e",
+  "version": "1.0.0",
+  "description": "Excel to Json and Json to Excel convertor",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nima Baghdadi",
+  "license": "ISC",
+  "dependencies": {
+    "xlsx": "^0.8.3"
+  }
+}
