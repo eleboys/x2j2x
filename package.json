@@ -1,8 +1,8 @@
 {
   "name": "x2j2x",
   "version": "1.0.0",
-  "description": "Excel to Json and Json to Excel convertor",
-  "main": "index.js",
+  "description": "Json to Excel and Excel to Json convertor using NodeJs",
+  "main": "x2j2x.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
