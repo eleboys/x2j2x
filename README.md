@@ -1,7 +1,7 @@
 # x2j2x
-Converting json file to excel and vice versa using nodejs.
+Converting JSON file to Excel and vice versa using NodeJs.
 
-Supporting json standards like nested objects and arrays. It converts json file to a two column excel file by which the first column will contain a flat dot seperated path to each value and the second column will contain the value. Later on you can convert the excel file agian to the same json structure using the reverse function.
+Supporting JSON standards like nested objects and arrays. It converts JSON file to a two column excel file by which the first column will contain a flat dot-separated path to each value and the second column will contain the value. Later on, you can convert the excel file again to the same JSON structure using the reverse function.
 
 ## Install
 ```
@@ -9,7 +9,7 @@ npm install x2j2x
 ```
 
 ## Usages
-I use it when I have provided a json file for my multiple language applications, containing keys and values in a base language and I want to hand in them to some translator (mashine/human) and when I have translations (new values) in a diffrent column I can retransform it to json format using the existing key and new value columns.
+I use it when I have provided a JSON file for my multiple language applications, containing keys and values in a base language and I want to hand them to some translator (machine/human) and when I have translations (new values) in a different column I can retransform it to JSON format using the existing key and new value columns.
 But you can use it for whatever you like :)
 
 ```javascript
