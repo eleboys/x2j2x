@@ -82,7 +82,8 @@ var x2j2x = {};
     * keyColNum: numeber - column number on which keys are stored (by default 0)
     * valColNum: numeber - column number on which values are stored (by default 1)
     **/
-    function json_to_excel(object, outPath, sheetName = 'Sheet1') {
+    function json_to_excel(object, outPath, sheetName) {
+        sheetName = sheetName || 'Sheet1'
         var flattenObj = flatten_object(object);
         var workbook = create_empty_workbook();
         var worksheet = object_array_to_sheet(flattenObj);
@@ -113,10 +114,14 @@ var x2j2x = {};
         }
     }
 
-    function excel_to_json(inputPath, sheetName='Sheet1', keyColNum=0, valColNum=1) {
+    function excel_to_json(inputPath, sheetName, keyColNum, valColNum) {
+        sheetName = sheetName || 'Sheet1';
+        keyColNum = keyColNum || 0;
+        valColNum = valColNum || 1;
         var workbook = XLSX.readFile(inputPath);
         var worksheet = workbook.Sheets[sheetName];
-        var objArray = XLSX.utils.sheet_to_row_object_array(worksheet, { header: 1 });
+        var objArray = XLSX.utils.sheet_to_row_object_array(worksheet, { header: 1 })
+                                 .filter(o => o && o.length);
         var finalObject = {};
         for (var i = 0; i < objArray.length; i++) {
             var key = objArray[i][keyColNum];
