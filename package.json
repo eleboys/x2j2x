@@ -1,6 +1,6 @@
 {
   "name": "x2j2x",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Json to Excel and Excel to Json convertor using NodeJs",
   "main": "x2j2x.js",
   "scripts": {
