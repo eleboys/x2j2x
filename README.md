@@ -1,5 +1,5 @@
 # x2j2x
-Converting JSON file to Excel and vice versa using NodeJs.
+Converting JSON to Excel file and vice versa using NodeJs.
 
 Supporting JSON standards like nested objects and arrays. It converts JSON file to a two column excel file by which the first column will contain a flat dot-separated path to each value and the second column will contain the value. Later on, you can convert the excel file again to the same JSON structure using the reverse function.
 
